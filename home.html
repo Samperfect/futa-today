@@ -127,7 +127,7 @@
             </li>
 
             <li class="nav-item active">
-              <a href="/" class="nav-link">Sign Out</a>
+              <a onclick="handleSession()" class="nav-link">Sign Out</a>
             </li>
           </ul>
 
@@ -387,6 +387,11 @@
           fillType: 'filled-lm',
         });
       };
+
+      function handleSession() {
+        localStorage.clear();
+        window.location.href = '/';
+      }
     </script>
 
     <script
