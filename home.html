@@ -86,7 +86,20 @@
   </head>
   <body>
     <main class="container py-5">
+      <!-- rendering sticky alerts start -->
+      <div class="sticky-alerts">
+        <!-- Collecting flashed messages -->
+
+        <!-- checking if there are flashed messages -->
+
+        <!-- checking if there are flashed messages end -->
+
+        <!-- Collecting flashed messages end -->
+      </div>
+      <!-- rendering sticky alerts end -->
+
       <!-- Navbar start -->
+
       <div class="container">
         <nav class="navbar">
           <div style="margin-left: 2rem">
@@ -363,7 +376,7 @@
     <script async>
       window.onload = async (e) => {
         const token = localStorage.getItem('user_token');
-        console.log(token);
+
         if (token == undefined) {
           return (window.location.href = '/');
         }
