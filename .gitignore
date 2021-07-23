@@ -5,3 +5,4 @@ pages
 radio
 .vscode
 node_modules
+.env
