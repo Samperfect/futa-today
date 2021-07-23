@@ -301,6 +301,7 @@
             });
           } else {
             console.log(response);
+            localStorage.setItem('user_token', Math.random() * 20);
             window.location.href = '/home.html';
           }
         } else {
